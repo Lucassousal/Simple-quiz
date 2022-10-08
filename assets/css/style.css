@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container--warning{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #555;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container--warning .warning{
+    position: absolute;
+    width: 40vw;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border: 2px solid #222;
+    border-radius: 15px;
+}
+
+.warning h2{
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+.warning p{
+    color: #FFF;
+    margin: 10px 0;
+    line-height: 25px;
+    width: 100%;
+    text-align: left;
+
+}
+
+.warning button{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 2px solid #222;
+    color: #333;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.warning button:hover{
+    background-color: #555;
+    color: #FFF;
+    transition: all ease-in-out 0.2s;
+}
+
+
+.title h1 {
+    color: #FFF;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.progress {
+    height: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.progress--bar {
+    background-color: #00FF00;
+    height: 100%;
+    transition: all ease .5s;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.questionArea,
+.scoreArea {
+    display: none;
+}
+
+.questionArea {
+    max-width: 500px;
+    width: 100%;
+}
+
+.question {
+    color: #FFF;
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center;
+}
+.option {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    color: #AAA;
+    font-size: 16px;
+    cursor: pointer;
+}
+.option span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #555;
+}
+.option:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.option.selected{
+    border: 2px solid #FFF;
+    transition: all ease-in-out 0.1s;
+}
+
+.button{
+    margin-top: 40px;
+    align-self: flex-end;
+}
+
+.button button{
+    display: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    cursor: pointer;
+}
+
+.button button:hover{
+    border:2px solid #FFF;
+    transition: all ease-in-out 0.2s;
+}
+
+
+.scoreArea {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.prizeImage {
+    width: auto;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.scoreText1 {
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.scorePct {
+    color: #0d630d;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.scoreText2 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.scoreArea button {
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #CCC;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.scoreArea button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    margin-top: 50px;
+    color: #FFF;
+    font-size: 13px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    <div class="progress">
+        <div class="progress--bar"></div>
+    </div>
+
+    <div class="container--warning">
+        <div class="warning">
+            <h2>Atenção</h2>
+            <p>A partir do momento em que você clicar no botão iniciar
+                não será possível reiniciar as questões.
+            </p>
+            <p>Quando estiver pronto clique em iniciar</p>
+            <button>Iniciar</button>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="title">
+            <h1>Questões sobre JS</h1>
+        </div>
+
+        <div class="questionArea">
+            <div class="question">...</div>
+            <div class="options">
+                <div data-op ="0" class = "option"><span>1</span></div>
+                <div data-op ="1" class = "option"><span>2</span></div>
+                <div data-op ="2" class = "option"><span>3</span></div>
+                <div data-op ="3" class = "option"><span>4</span></div>
+            </div>
+        </div>
+
+        <div class="button">
+            <button>Proxima Questão</button>
+        </div>
+
+        <div class="scoreArea">
+            <img src="assets/images/prize.png" class="prizeImage" />
+            <div class="scoreText1">Parabéns!</div>
+            <div class="scorePct">Acertou 99%</div>
+            <div class="scoreText2">Você respondeu 9 questões e acertou 8.</div>
+            <button>Fazer novamente</button>
+        </div>
+    </div>
+    <footer>Criado por Lucas Sousa</footer>
+
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
